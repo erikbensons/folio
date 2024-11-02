@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Grandstander;
+    src: url(Grandstander-ExtraBold.woff);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+body {
+    cursor: url('red-dot.png'), auto;
+}
+.corner-logo {
+    height: 138px;
+}
+
+html {
+    background-color: #F0F0F0;
+    font-family: Grandstander;
+}
+
+.nav-bar {
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    border-right: #F54B4B 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+}
+
+.top-nav {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bottom-nav {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+a, h3 {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+
+a:hover {
+    background-color: #F9B233;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+body {
+    display: flex;
+}
+
+.main-content {
+    padding-left: 200px;
+}
+
+.menu-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F54B4B;
+    margin-top: 5px;
+    height: 15px;
+    width: 80px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #F0F0F0;
+}
+
+.arrow-button {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(245, 75, 75, 0.2);
+    border: none;
+    color: #F54B4B;
+}
+
+.arrow-button:hover {
+    animation: spin 0.3s forwards;
+}
+
+#language-button {
+    align-self: center;
+}
+
+.first-content {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 128px;
+    color: #F54B4B;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.second-content {
+    display: flex;
+}
+
+.second-design {
+    font-size: 128px;
+    width: 515px;
+    margin-top: 80px;
+}
+
+.second-YOUR {
+    font-size: 200px;
+    margin-bottom: -100px;
+}
+
+.color-image {
+    height: 600px;
+    border-radius: 50px;
+    border: solid #F9B233 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
